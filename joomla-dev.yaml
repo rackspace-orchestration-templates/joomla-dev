@@ -23,7 +23,6 @@ parameter_groups:
   - joomla_email
 - label: rax-dev-params
   parameters:
-  - secondary_template
   - ansible_source
 
 parameters:
