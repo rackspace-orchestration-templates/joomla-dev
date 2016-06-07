@@ -176,7 +176,7 @@ resources:
         holland_mysql_password: {  get_attr: [holland_pass, value] }
         holland_mysql_host: "localhost"
         holland_create_user: "yes"
-        joomla_db_host: { get_attr: [joomla_database, hostname] }
+        joomla_db_host: "localhost"
         joomla_db_name: "joomla"
         joomla_db_user: "joomla"
         joomla_db_password: { get_attr: [database_pass, value] }
