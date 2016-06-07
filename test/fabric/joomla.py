@@ -20,9 +20,6 @@ def check():
         assert service.is_enabled('nginx'), 'nginx is not enabled'
         assert service.is_enabled('php5-fpm'), 'php-fpm is not enabled'
 
-    if ("secondary" not in socket.gethostname()):
-        assert service.is_enabled('lsyncd'), 'lsyncd is not enabled'
-
 @task
 def artifacts():
     env.platform_family = detect.detect()
