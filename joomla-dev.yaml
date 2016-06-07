@@ -174,7 +174,7 @@ resources:
           - "phpmyadmin"
         holland_mysql_user: "holland"
         holland_mysql_password: {  get_attr: [holland_pass, value] }
-        holland_mysql_host: { get_attr: [joomla_database, hostname] }
+        holland_mysql_host: "localhost"
         holland_create_user: "yes"
         joomla_db_host: { get_attr: [joomla_database, hostname] }
         joomla_db_name: "joomla"
